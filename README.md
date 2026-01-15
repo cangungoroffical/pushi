@@ -38,4 +38,4 @@ You can download the precompiled binary here:
 1. Make the binary executable:
 
 ```bash
-chmod +x pushi_socks_proxy
+chmod +x proxy
