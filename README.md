@@ -1,41 +1,49 @@
 # Pushi SOCKS Proxy
 
-**Pushi SOCKS Proxy** – High-performance TCP/UDP SOCKS5 proxy for Termux and Linux.
-
-**Copyright:** © 2026 Can Güngör  
 **Version:** 2026.2.14  
+**Author:** Can Güngör  
 **Contact:** pusheenlower@gmail.com  
 
-**Status:** Closed Source – All rights reserved.
+Pushi is a high-performance SOCKS5 proxy server designed specifically for **Android ARM64 (Termux)**.  
+It supports TCP connections, remote DNS, authentication, and JSON-formatted logging.
 
 ---
 
 ## Features
 
-- SOCKS5 TCP CONNECT & UDP ASSOCIATE
-- IPv4 / IPv6 / Domain support
-- Remote DNS resolution (TCP & UDP)
-- Optional Username/Password authentication
-- Multi-threaded (pthreads)
-- Logging (`socks5.log`)
-- Automatic configuration file generation (`socks5.conf`)
-- Termux / Android compatible
+- SOCKS5 proxy (TCP) with authentication
+- Remote DNS support
+- JSON logging for connections and user activity
+- Single binary for Android ARM64
+- Closed-source, no source code disclosure
+- Linux ARM64 binary coming soon
+- **Windows is not supported** – running on Windows may cause kernel panic or system instability
 
 ---
 
-## Download
+## Platform Compatibility
 
-You can download the precompiled binary here:  
+| Platform          | Architecture | Binary Name              | Status          |
+|------------------|-------------|-------------------------|----------------|
+| Android Termux ✅ | ARM64       | pushi-android-arm64      | Supported      |
+| Linux             | ARM64       | pushi-linux-arm64        | Coming Soon    |
+| Linux             | x86_64      | pushi-linux-x86_64       | Coming Soon    |
+| Linux             | ARMv7       | pushi-linux-armv7        | Not Supported  |
+| Windows           | x86/x86_64  | -                        | Not Supported  |
 
-[**Download Pushi SOCKS Proxy v2026.2.14**](https://github.com/cangungoroffical/pushi/blob/main/proxy)
-
-> **Note:** This software is **closed-source**. Unauthorized copying or distribution of the source code is prohibited. Only the precompiled binary is provided.
+**Note:**  
+- The Android ARM64 binary is fully functional and ready to use.  
+- Linux binaries are planned and will be released soon.  
+- Do not attempt to run the Android binary on Linux, Windows, or 32-bit devices; it will fail or cause instability.
 
 ---
 
-## Installation & Usage
+## Installation & Running
 
-1. Make the binary executable:
-
+### Android (Termux)
 ```bash
-chmod +x proxy
+# Give execute permission
+chmod +x pushi-android-arm64
+
+# Run the proxy
+./pushi-android-arm64
