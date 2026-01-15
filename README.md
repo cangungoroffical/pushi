@@ -27,7 +27,7 @@
 
 You can download the precompiled binary here:  
 
-[**Download Pushi SOCKS Proxy v2026.2.14**](https://github.com/<username>/pushi_socks_proxy/releases/download/v2026.2.14/pushi_socks_proxy)
+[**Download Pushi SOCKS Proxy v2026.2.14**](https://github.com/cangungoroffical/pushi/blob/main/proxy)
 
 > **Note:** This software is **closed-source**. Unauthorized copying or distribution of the source code is prohibited. Only the precompiled binary is provided.
 
